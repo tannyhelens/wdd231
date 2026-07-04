@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220">
+  <defs>
+    <style>
+      .navy { fill:#0f2d57; }
+      .green { fill:#67b32e; }
+      .white { fill:#ffffff; }
+    </style>
+  </defs>
+
+  <!-- Diamond -->
+  <rect x="45" y="45" width="130" height="130" rx="14" transform="rotate(45 110 110)" class="navy"></rect>
+
+  <!-- Outer Border -->
+  <rect x="32" y="32" width="156" height="156" rx="18" transform="rotate(45 110 110)" fill="none" stroke="#0f2d57" stroke-width="6"></rect>
+
+  <!-- Decorative Brackets -->
+  <polyline points="15,110 35,90 35,130 15,110" fill="none" stroke="#67b32e" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></polyline>
+
+  <polyline points="205,110 185,90 185,130 205,110" fill="none" stroke="#67b32e" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></polyline>
+
+  <!-- TS -->
+  <text x="90" y="126" font-family="Georgia, serif" font-size="68" font-weight="700" class="white" text-anchor="middle">T</text>
+
+  <text x="132" y="146" font-family="Georgia, serif" font-size="68" font-weight="700" class="green" text-anchor="middle">S</text>
+</svg>
