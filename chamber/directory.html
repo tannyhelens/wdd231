@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio de Janeiro Chamber of Commerce Directory</title>
+<meta
+        name="description"
+        content="Discover businesses and organizations that are members of the Rio de Janeiro Chamber of Commerce."
+    >
+
+    <meta name="author" content="Tanny Santos">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta
+        property="og:title"
+        content="Rio de Janeiro Chamber of Commerce Directory"
+    >
+    <meta
+        property="og:description"
+        content="Explore local businesses and organizations in Rio de Janeiro, Brazil."
+    >
+    <meta
+        property="og:image"
+        content="https://tannyhelens.github.io/wdd231/chamber/images/rio-og-image.webp"
+    >
+    <meta
+        property="og:url"
+        content="https://tannyhelens.github.io/wdd231/chamber/directory.html"
+    >
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="site-branding">
+            <img
+                src="images/logo-riodejaneiro.png"
+                alt="Rio de Janeiro Chamber of Commerce logo"
+                width="80"
+                height="80"
+            >
+
+            <div>
+                <span>Rio de Janeiro</span>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+
+        <button
+            id="menu"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html" class="active">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Rio de Janeiro Business Directory</h1>
+
+        <section class="directory-controls">
+            <h2>Business Members</h2>
+
+            <div class="view-buttons">
+                <button
+                    id="grid"
+                    type="button"
+                    aria-label="Display members in grid view"
+                >
+                </button>
+
+                <button
+                    id="list"
+                    type="button"
+                    aria-label="Display members in list view"
+                >
+
+                </button>
+            </div>
+        </section>
+
+        <section
+            id="members"
+            class="member-container grid"
+            aria-live="polite"
+        >
+            <h2 class="visually-hidden">Chamber Members Directory</h2>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Rio de Janeiro Chamber of Commerce</strong></p>
+            <p>Rio de Janeiro, RJ, Brazil</p>
+            <p>
+                <a href="mailto:contact@riochamber.org">
+                    contact@riochamber.org
+                </a>
+            </p>
+            <p>
+                <a href="tel:+552155551234">
+                    +55 21 5555-1234
+                </a>
+            </p>
+        </div>
+
+        <div class="social-links">
+            <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit our Facebook page"
+            >
+                <img
+                    src="images/facebook-svgrepo-com.svg"
+                    alt=""
+                    width="40"
+                    height="40"
+                >
+            </a>
+
+            <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit our Instagram page"
+            >
+                <img
+                    src="images/instagram-svgrepo-com.svg"
+                    alt=""
+                    width="40"
+                    height="40"
+                >
+            </a>
+
+            <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Visit our LinkedIn page"
+            >
+                <img
+                    src="images/linkedin-svgrepo-com.svg"
+                    alt=""
+                    width="40"
+                    height="40"
+                >
+            </a>
+        </div>
+
+        <div class="footer-development">
+            <p>WDD 231 Class Project</p>
+            <p>Tanny Santos</p>
+
+            <p>
+                © <span id="current-year"></span> Rio de Janeiro Chamber of Commerce
+            </p>
+
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+</body>
+</html>

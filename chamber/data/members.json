@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Rio Carioca Tours",
+    "address": "Avenida Atlântica, 1702, Copacabana, Rio de Janeiro",
+    "phone": "+55 21 3210-1001",
+    "website": "https://example.com/rio-carioca-tours",
+    "image": "rio-carioca-tours.jpg",
+    "membership": 3,
+    "description": "Guided tours to Rio de Janeiro's most famous attractions."
+  },
+  {
+    "name": "Ipanema Café",
+    "address": "Rua Visconde de Pirajá, 550, Ipanema, Rio de Janeiro",
+    "phone": "+55 21 3210-1002",
+    "website": "https://example.com/ipanema-cafe",
+    "image": "ipanema-cafe.jpg",
+    "membership": 2,
+    "description": "A local café serving Brazilian coffee, pastries, and light meals."
+  },
+  {
+    "name": "Guanabara Technology",
+    "address": "Avenida Rio Branco, 156, Centro, Rio de Janeiro",
+    "phone": "+55 21 3210-1003",
+    "website": "https://example.com/guanabara-technology",
+    "image": "guanabara-tecnology.jpg",
+    "membership": 3,
+    "description": "Technology services and digital solutions for local businesses."
+  },
+  {
+    "name": "Sugarloaf Adventures",
+    "address": "Avenida Pasteur, 520, Urca, Rio de Janeiro",
+    "phone": "+55 21 3210-1004",
+    "website": "https://example.com/sugarloaf-adventures",
+    "image": "sugarloaf-adventures.jpg",
+    "membership": 2,
+    "description": "Outdoor activities and adventure experiences near Sugarloaf Mountain."
+  },
+  {
+    "name": "Copacabana Ocean Hotel",
+    "address": "Avenida Atlântica, 2500, Copacabana, Rio de Janeiro",
+    "phone": "+55 21 3210-1005",
+    "website": "https://example.com/copacabana-ocean-hotel",
+    "image": "copacabana-hotel.jpg",
+    "membership": 3,
+    "description": "Comfortable accommodations near Copacabana Beach."
+  },
+  {
+    "name": "Samba Cultural Center",
+    "address": "Rua do Lavradio, 120, Lapa, Rio de Janeiro",
+    "phone": "+55 21 3210-1006",
+    "website": "https://example.com/samba-cultural-center",
+    "image": "samba-cultural-center.jpg",
+    "membership": 1,
+    "description": "Cultural events, music classes, and traditional Brazilian dance."
+  },
+  {
+    "name": "Tijuca Green Solutions",
+    "address": "Rua Conde de Bonfim, 800, Tijuca, Rio de Janeiro",
+    "phone": "+55 21 3210-1007",
+    "website": "https://example.com/tijuca-green-solutions",
+    "image": "tijuca-green-solutions.jpg",
+    "membership": 2,
+    "description": "Sustainable products and environmental consulting services."
+  },
+  {
+    "name": "Maracanã Sports Store",
+    "address": "Rua Professor Eurico Rabelo, 100, Maracanã, Rio de Janeiro",
+    "phone": "+55 21 3210-1008",
+    "website": "https://example.com/maracana-sports-store",
+    "image": "maracana-sports-store.jpg",
+    "membership": 1,
+    "description": "Sports clothing, equipment, and accessories for athletes and fans."
+  }
+]

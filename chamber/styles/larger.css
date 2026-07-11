@@ -1,0 +1,65 @@
+@media screen and (min-width: 700px) {
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  .site-branding {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    margin-top: 0;
+  }
+
+  nav a {
+    padding: .75rem 1rem;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  .member-container.grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .member-card {
+    max-width: 100%;
+  }
+
+  .member-container.list .member-card {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1.2fr 1.5fr;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+  }
+
+  .member-container.list .member-card h2,
+  .member-container.list .member-card p,
+  .member-container.list .member-card a {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+
+  .member-container.grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
