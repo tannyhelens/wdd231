@@ -1,5 +1,6 @@
 :root {
   --primary: #0077b6;
+  --primary-dark: #005f8f;
   --secondary: #90e0ef;
   --background: #fffdf5;
   --card: #ffffff;
@@ -7,6 +8,7 @@
   --green: #2a9d8f;
   --text: #264653;
   --white: #ffffff;
+  --border: #d6eaf3;
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -23,14 +25,16 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 a {
   color: var(--primary);
 }
+
+/* HEADER */
 
 header {
   background-color: var(--primary);
@@ -41,12 +45,12 @@ header {
 .site-branding {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 0.9rem;
 }
 
 .site-branding img {
-   width: 105px;
-  height: 105px;
+  width: 85px;
+  height: 85px;
   object-fit: contain;
   border-radius: 50%;
   flex-shrink: 0;
@@ -54,20 +58,15 @@ header {
 
 .site-branding span {
   display: block;
-  font-size: 1.3rem;
+}
+
+.site-name {
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
-.site-branding h1 {
-    margin: 0;
-    font-size: 1.4rem;
-   
-}
-
-.site-branding p {
-    margin:4px 0 0;
-    font-size: .9rem;
-   
+.site-description {
+  font-size: 0.85rem;
 }
 
 #menu {
@@ -97,8 +96,8 @@ nav a {
   display: block;
   padding: 0.85rem;
   color: var(--white);
-  text-decoration: none;
   text-align: center;
+  text-decoration: none;
   border-radius: 8px;
 }
 
@@ -108,21 +107,25 @@ nav a.active {
   color: var(--text);
 }
 
+/* MAIN */
+
 main {
   width: min(100% - 2rem, 1200px);
   margin: 0 auto;
   padding: 1.5rem 0;
 }
 
-h1 {
-  text-align: center;
+main > h1 {
+  margin: 0 0 1.5rem;
   color: var(--primary);
-  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
+/* DIRECTORY PAGE */
+
 .directory-controls {
-  text-align: center;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .directory-controls h2 {
@@ -137,9 +140,9 @@ h1 {
 }
 
 .view-buttons button {
+  padding: 0.7rem 1.2rem;
   border: none;
   border-radius: 8px;
-  padding: 0.7rem 1.2rem;
   background-color: var(--primary);
   color: var(--white);
   font-weight: 700;
@@ -163,22 +166,22 @@ h1 {
 }
 
 .member-card {
- width: 100%;
+  width: 100%;
   max-width: 340px;
   margin: 0 auto;
   padding: 1rem;
-  text-align: center;
   background-color: var(--card);
-  border: 1px solid #d6eaf3;
+  border: 1px solid var(--border);
   border-radius: 8px;
   box-shadow: var(--shadow);
+  text-align: center;
 }
 
 .member-card img {
- width: 260px;
+  width: 260px;
   height: 160px;
-  object-fit: cover;
   margin: 0 auto 1rem;
+  object-fit: cover;
   border-radius: 6px;
 }
 
@@ -192,18 +195,18 @@ h1 {
 }
 
 .membership-level {
-  font-weight: 700;
   color: var(--green);
+  font-weight: 700;
 }
 
 .member-card a {
- display: inline-block;
+  display: inline-block;
   margin-top: 0.75rem;
   padding: 0.55rem 0.9rem;
+  border-radius: 6px;
   background-color: var(--primary);
   color: var(--white);
   text-decoration: none;
-  border-radius: 6px;
   font-weight: 700;
 }
 
@@ -213,18 +216,18 @@ h1 {
 
 .member-container.list {
   display: block;
-  }
+}
 
 .member-container.list .member-card {
-   display: grid;
+  display: grid;
   grid-template-columns: 1fr;
   max-width: none;
   margin: 0;
   padding: 0.8rem;
-  text-align: left;
   border: none;
   border-radius: 0;
   box-shadow: none;
+  text-align: left;
 }
 
 .member-container.list .member-card:nth-child(even) {
@@ -232,7 +235,7 @@ h1 {
 }
 
 .member-container.list .member-card:nth-child(odd) {
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .member-container.list .member-card img,
@@ -242,8 +245,8 @@ h1 {
 }
 
 .member-container.list .member-card h2 {
-  font-size: 1rem;
   margin: 0 0 0.35rem;
+  font-size: 1rem;
 }
 
 .member-container.list .member-card a {
@@ -254,19 +257,114 @@ h1 {
   text-decoration: underline;
 }
 
-.error-message {
-  text-align: center;
-  padding: 1rem;
-  background-color: #ffe5e5;
-  border: 1px solid #cc0000;
-  border-radius: 8px;
-  color: #7a0000;
+/* HOME PAGE */
+
+.hero {
+  margin-bottom: 1.5rem;
 }
 
-footer {
+.hero img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.hero-content {
+  position: relative;
+  padding-top: 1rem;
+}
+
+.hero-content h2 {
+  margin: 0 0 0.5rem;
+}
+
+.hero-content p {
+  margin: 0;
+  padding-right: 9rem;
+}
+
+.join-button {
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
   background-color: var(--primary);
   color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.join-button:hover {
+  background-color: var(--primary-dark);
+}
+
+.events,
+.weather,
+.spotlights {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--card);
+}
+
+.events h2,
+.weather h2,
+.spotlights h2 {
+  margin-top: 0;
+}
+
+#weather-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  background: transparent;
+  border-radius: 0;
+}
+
+#spotlight-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.spotlight-card {
+  padding: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.spotlight-card img {
+  width: 120px;
+  height: 90px;
+  margin: 0 auto 1rem;
+  object-fit: contain;
+}
+
+.spotlight-card h3 {
+  margin-top: 0;
+}
+
+.spotlight-card p {
+  margin: 0.45rem 0;
+}
+
+/* ERROR MESSAGE */
+
+.error-message {
+  padding: 1rem;
+  border: 1px solid #cc0000;
+  border-radius: 8px;
+  background-color: #ffe5e5;
+  color: #7a0000;
+  text-align: center;
+}
+
+/* FOOTER */
+
+footer {
   padding: 1.5rem 1rem;
+  background-color: var(--primary);
+  color: var(--white);
   text-align: center;
 }
 
@@ -289,6 +387,8 @@ footer a {
   width: 40px;
   height: 40px;
 }
+
+/* ACCESSIBILITY */
 
 .visually-hidden {
   position: absolute;

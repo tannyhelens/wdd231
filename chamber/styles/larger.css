@@ -1,5 +1,4 @@
 @media screen and (min-width: 700px) {
-
   header {
     display: flex;
     align-items: center;
@@ -20,17 +19,19 @@
   nav {
     display: flex;
     flex-direction: row;
-    gap: .5rem;
+    gap: 0.5rem;
     margin-top: 0;
   }
 
   nav a {
-    padding: .75rem 1rem;
+    padding: 0.75rem 1rem;
   }
 
   main {
     padding: 2rem;
   }
+
+  /* DIRECTORY PAGE */
 
   .member-container.grid {
     grid-template-columns: repeat(2, 1fr);
@@ -54,12 +55,60 @@
   .member-container.list .member-card a {
     margin: 0;
   }
+
+  /* HOME PAGE */
+
+  .hero img {
+    width: 100%;
+    max-height: 520px;
+    object-fit: cover;
+  }
+
+  .home-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+
+  .events {
+    grid-column: 1 / 2;
+  }
+
+  .weather {
+    grid-column: 2 / 3;
+  }
+
+  .spotlights {
+    grid-column: 1 / 3;
+  }
+
+  #spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .spotlight-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem;
+  }
+
+  .spotlight-card img {
+    width: 140px;
+    height: 100px;
+    object-fit: contain;
+  }
 }
 
 @media screen and (min-width: 1000px) {
-
   .member-container.grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+  }
+
+  #spotlight-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
