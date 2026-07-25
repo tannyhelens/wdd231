@@ -100,6 +100,25 @@
     height: 100px;
     object-fit: contain;
   }
+
+  /* JOIN PAGE */
+
+  .join-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .membership-section {
+    position: sticky;
+    top: 1rem;
+  }
+
+  .membership-cards {
+    display: grid;
+    gap: 1rem;
+  }
 }
 
 @media screen and (min-width: 1000px) {

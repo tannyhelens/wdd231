@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Apply to join the Rio de Janeiro Chamber of Commerce and choose a membership level."
+  >
+  <meta name="author" content="Tanny Santos">
+
+  <meta property="og:title" content="Join the Rio de Janeiro Chamber of Commerce">
+  <meta
+    property="og:description"
+    content="Complete the membership application form to join the Rio de Janeiro Chamber of Commerce."
+  >
+  <meta
+    property="og:image"
+    content="https://tannyhelens.github.io/wdd231/chamber/images/logo-riodejaneiro.jpg"
+  >
+  <meta
+    property="og:url"
+    content="https://tannyhelens.github.io/wdd231/chamber/join.html"
+  >
+
+  <title>Join | Rio de Janeiro Chamber of Commerce</title>
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="site-branding">
+      <img
+        src="images/logo-riodejaneiro.jpg"
+        alt="Rio de Janeiro Chamber of Commerce logo"
+        width="105"
+        height="105"
+      >
+
+      <div>
+        <span>Rio de Janeiro</span>
+        <p>Chamber of Commerce</p>
+      </div>
+    </div>
+
+    <button id="menu" aria-label="Open navigation menu"></button>
+
+    <nav id="navigation">
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="discover.html">Discover</a>
+      <a href="join.html" class="active">Join</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Join the Chamber</h1>
+
+    <div class="join-layout">
+      <section class="application-section">
+        <h2>Membership Application</h2>
+
+        <form method="get" action="thankyou.html">
+          <label>
+            First Name
+            <input
+              type="text"
+              name="first"
+              title="Enter your first name"
+              autocomplete="given-name"
+              required
+            >
+          </label>
+
+          <label>
+            Last Name
+            <input
+              type="text"
+              name="last"
+              title="Enter your last name"
+              autocomplete="family-name"
+              required
+            >
+          </label>
+
+          <label>
+            Organizational Title
+            <input
+              type="text"
+              name="organization-title"
+              title="Enter your organizational title using letters, spaces, or hyphens"
+              autocomplete="organization-title"
+              pattern="[A-Za-z\s-]{7,}"
+            >
+          </label>
+
+          <label>
+            Email Address
+            <input
+              type="email"
+              name="email"
+              title="Enter your email address"
+              autocomplete="email"
+              placeholder="name@example.com"
+              required
+            >
+          </label>
+
+          <label>
+            Mobile Phone
+            <input
+              type="tel"
+              name="phone"
+              title="Enter your mobile phone number"
+              autocomplete="tel"
+              required
+            >
+          </label>
+
+          <label>
+            Business or Organization Name
+            <input
+              type="text"
+              name="organization"
+              title="Enter your business or organization name"
+              autocomplete="organization"
+              required
+            >
+          </label>
+
+          <label>
+            Membership Level
+            <select
+              name="membership"
+              title="Select a membership level"
+              required
+            >
+              <option value="" disabled selected>Select a membership level</option>
+              <option value="np">NP Membership</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+
+          <label>
+            Business or Organization Description
+            <textarea
+              name="description"
+              title="Enter a description of your business or organization"
+              rows="6"
+            ></textarea>
+          </label>
+
+          <input type="hidden" name="timestamp" id="timestamp">
+
+          <input type="submit" value="Apply for Membership">
+        </form>
+      </section>
+
+      <section class="membership-section">
+        <h2>Membership Levels</h2>
+
+        <div class="membership-cards">
+          <article class="membership-card">
+            <h3>NP Membership</h3>
+            <p>No fee for nonprofit organizations.</p>
+            <button type="button" data-modal="np-modal">
+              View Benefits
+            </button>
+          </article>
+
+          <article class="membership-card">
+            <h3>Bronze Membership</h3>
+            <p>Basic benefits for growing businesses.</p>
+            <button type="button" data-modal="bronze-modal">
+              View Benefits
+            </button>
+          </article>
+
+          <article class="membership-card">
+            <h3>Silver Membership</h3>
+            <p>More visibility and event discounts.</p>
+            <button type="button" data-modal="silver-modal">
+              View Benefits
+            </button>
+          </article>
+
+          <article class="membership-card">
+            <h3>Gold Membership</h3>
+            <p>Premium promotion and special opportunities.</p>
+            <button type="button" data-modal="gold-modal">
+              View Benefits
+            </button>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <dialog id="np-modal">
+    <button class="close-modal" aria-label="Close modal">×</button>
+    <h2>NP Membership Benefits</h2>
+    <p>No membership fee.</p>
+    <p>Access to chamber networking events.</p>
+    <p>Organization listing in the chamber directory.</p>
+  </dialog>
+
+  <dialog id="bronze-modal">
+    <button class="close-modal" aria-label="Close modal">×</button>
+    <h2>Bronze Membership Benefits</h2>
+    <p>Business directory listing.</p>
+    <p>Access to training workshops.</p>
+    <p>Discounts for selected chamber events.</p>
+  </dialog>
+
+  <dialog id="silver-modal">
+    <button class="close-modal" aria-label="Close modal">×</button>
+    <h2>Silver Membership Benefits</h2>
+    <p>All Bronze Membership benefits.</p>
+    <p>Increased advertising opportunities.</p>
+    <p>Greater discounts for chamber events.</p>
+  </dialog>
+
+  <dialog id="gold-modal">
+    <button class="close-modal" aria-label="Close modal">×</button>
+    <h2>Gold Membership Benefits</h2>
+    <p>All Silver Membership benefits.</p>
+    <p>Homepage spotlight opportunities.</p>
+    <p>Priority access to special chamber events.</p>
+  </dialog>
+
+  <footer>
+    <div class="footer-content">
+      <div>
+        <p><strong>Rio de Janeiro Chamber of Commerce</strong></p>
+        <p>Rio de Janeiro, Brazil</p>
+        <p>info@riochamber.org</p>
+      </div>
+
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+
+      <div>
+        <p>WDD 231 Chamber Project</p>
+        <p>Tanny Santos</p>
+
+        <p>
+          © <span id="current-year"></span>
+          Rio de Janeiro Chamber of Commerce
+        </p>
+
+        <p id="last-modified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
