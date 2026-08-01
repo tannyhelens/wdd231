@@ -612,3 +612,42 @@ dialog h2 {
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--border);
 }
+
+.visitor-message {
+  background: #ffffff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 6px solid #0077b6;
+  border-radius: 8px;
+}
+
+.discover-grid {
+  display: grid;
+  gap: 1.5rem;
+  min-height: 1200px;
+  }
+
+.discover-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+
+.discover-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.discover-card button {
+  margin-top: .75rem;
+  padding: .5rem 1rem;
+  background: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
