@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "name": "Standard Cleaning",
+    "category": "Recurring",
+    "price": "$120",
+    "duration": "2–3 hours",
+    "description": "Routine cleaning for kitchens, bathrooms, bedrooms, and living areas.",
+    "image": "images/standard-cleaning.webp"
+  },
+  {
+    "id": 2,
+    "name": "Deep Cleaning",
+    "category": "Premium",
+    "price": "$220",
+    "duration": "4–6 hours",
+    "description": "A detailed cleaning service for areas that need extra attention and care.",
+    "image": "images/deep-cleaning.webp"
+  },
+  {
+    "id": 3,
+    "name": "Move-In Cleaning",
+    "category": "Moving",
+    "price": "$250",
+    "duration": "4–6 hours",
+    "description": "A complete cleaning service to prepare a new home before moving in.",
+    "image": "images/move-in-cleaning.webp"
+  },
+  {
+    "id": 4,
+    "name": "Move-Out Cleaning",
+    "category": "Moving",
+    "price": "$275",
+    "duration": "4–6 hours",
+    "description": "Thorough cleaning designed to leave a home ready for the next resident.",
+    "image": "images/move-out-cleaning.webp"
+  },
+  {
+    "id": 5,
+    "name": "Apartment Cleaning",
+    "category": "Residential",
+    "price": "$100",
+    "duration": "2–3 hours",
+    "description": "Flexible cleaning service designed for apartments and smaller living spaces.",
+    "image": "images/apartment-cleaning.webp"
+  },
+  {
+    "id": 6,
+    "name": "House Cleaning",
+    "category": "Residential",
+    "price": "$150",
+    "duration": "3–5 hours",
+    "description": "Complete cleaning for bedrooms, bathrooms, kitchens, and shared spaces.",
+    "image": "images/house-cleaning.webp"
+  },
+  {
+    "id": 7,
+    "name": "Office Cleaning",
+    "category": "Commercial",
+    "price": "$180",
+    "duration": "3–4 hours",
+    "description": "Professional cleaning for offices, workspaces, break rooms, and restrooms.",
+    "image": "images/office-cleaning.webp"
+  },
+  {
+    "id": 8,
+    "name": "Kitchen Detail Cleaning",
+    "category": "Add-on",
+    "price": "$75",
+    "duration": "1–2 hours",
+    "description": "Detailed cleaning of counters, cabinets, sinks, appliances, and kitchen surfaces.",
+    "image": "images/kitchen-cleaning.webp"
+  },
+  {
+    "id": 9,
+    "name": "Bathroom Detail Cleaning",
+    "category": "Add-on",
+    "price": "$65",
+    "duration": "1–2 hours",
+    "description": "Deep cleaning for showers, tubs, toilets, sinks, mirrors, and bathroom floors.",
+    "image": "images/bathroom-cleaning.webp"
+  },
+  {
+    "id": 10,
+    "name": "Refrigerator Cleaning",
+    "category": "Add-on",
+    "price": "$45",
+    "duration": "45–60 minutes",
+    "description": "Interior refrigerator cleaning, including shelves, drawers, and removable parts.",
+    "image": "images/refrigerator-cleaning.webp"
+  },
+  {
+    "id": 11,
+    "name": "Oven Cleaning",
+    "category": "Add-on",
+    "price": "$50",
+    "duration": "1 hour",
+    "description": "Interior oven cleaning to remove grease, food residue, and buildup.",
+    "image": "images/oven-cleaning.webp"
+  },
+  {
+    "id": 12,
+    "name": "Interior Window Cleaning",
+    "category": "Add-on",
+    "price": "$60",
+    "duration": "1–2 hours",
+    "description": "Cleaning for interior windows, glass doors, frames, and window sills.",
+    "image": "images/window-cleaning.webp"
+  },
+  {
+    "id": 13,
+    "name": "Laundry Folding",
+    "category": "Add-on",
+    "price": "$25 per load",
+    "duration": "Same day",
+    "description": "Wash, dry, and neatly fold one load of laundry for convenient pickup or in-home service.",
+    "image": "images/laundry-service.webp"
+    
+  },
+  {
+    "id": 14,
+    "name": "Eco-Friendly Cleaning",
+    "category": "Specialty",
+    "price": "$160",
+    "duration": "3–4 hours",
+    "description": "Residential cleaning using environmentally friendly products and methods.",
+    "image": "images/eco-friendly-cleaning.webp"
+  },
+  {
+    "id": 15,
+    "name": "Vacation Rental Cleaning",
+    "category": "Specialty",
+    "price": "$140",
+    "duration": "2–4 hours",
+    "description": "Fast and reliable turnover cleaning for short-term rental properties.",
+    "image": "images/vacation-rental-cleaning.webp"
+  }
+]

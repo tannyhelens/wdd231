@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Request a cleaning quote from Bright Home Cleaning and tell us about your home, preferred service, and cleaning schedule."
+  >
+  <meta name="author" content="Tanny Santos">
+
+  <meta property="og:title" content="Contact Bright Home Cleaning">
+  <meta
+    property="og:description"
+    content="Request a personalized cleaning quote from Bright Home Cleaning."
+  >
+  <meta
+    property="og:image"
+    content="https://tannyhelens.github.io/wdd231/finalproject/images/clean-home.webp"
+  >
+  <meta
+    property="og:url"
+    content="https://tannyhelens.github.io/wdd231/finalproject/contact.html"
+  >
+  <meta property="og:type" content="website">
+
+  <title>Bright Home Cleaning | Contact</title>
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/contact.js"></script>
+</head>
+
+<body>
+  <header>
+    <a class="brand" href="index.html">
+      <span class="brand-icon" aria-hidden="true">✨</span>
+
+      <div>
+        <span class="brand-name">Bright Home Cleaning</span>
+        <span class="brand-tagline">A brighter home starts here</span>
+      </div>
+    </a>
+
+    <button
+      id="menu"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+
+    <nav id="navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-heading">
+      <p class="eyebrow">Request a quote</p>
+      <h1>Tell Us About Your Cleaning Needs</h1>
+      <p>
+        Complete the form below and we will use the details to prepare
+        a personalized cleaning estimate.
+      </p>
+    </section>
+
+    <section class="contact-layout">
+      <div class="form-container">
+        <h2>Cleaning Quote Form</h2>
+
+        <form method="get" action="form-action.html" id="quote-form">
+          <div class="form-grid">
+            <label>
+              First Name
+              <input
+                type="text"
+                name="firstName"
+                id="first-name"
+                autocomplete="given-name"
+                required
+              >
+            </label>
+
+            <label>
+              Last Name
+              <input
+                type="text"
+                name="lastName"
+                id="last-name"
+                autocomplete="family-name"
+                required
+              >
+            </label>
+          </div>
+
+          <div class="form-grid">
+            <label>
+              Email Address
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+                placeholder="name@example.com"
+                required
+              >
+            </label>
+
+            <label>
+              Phone Number
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                autocomplete="tel"
+                placeholder="385-555-0123"
+                required
+              >
+            </label>
+          </div>
+
+          <label>
+            Service Needed
+            <select name="service" id="service-select" required>
+              <option value="">Select a service</option>
+            </select>
+          </label>
+
+          <div class="form-grid">
+            <label>
+              Preferred Cleaning Date
+              <input
+                type="date"
+                name="cleaningDate"
+                id="cleaning-date"
+                required
+              >
+            </label>
+
+            <label>
+              Home Size
+              <select name="homeSize" id="home-size" required>
+                <option value="">Select home size</option>
+                <option value="Studio or 1 Bedroom">
+                  Studio or 1 Bedroom
+                </option>
+                <option value="2 Bedrooms">2 Bedrooms</option>
+                <option value="3 Bedrooms">3 Bedrooms</option>
+                <option value="4 Bedrooms">4 Bedrooms</option>
+                <option value="5 or More Bedrooms">
+                  5 or More Bedrooms
+                </option>
+              </select>
+            </label>
+          </div>
+
+          <fieldset>
+            <legend>Preferred Contact Method</legend>
+
+            <label class="radio-option">
+              <input
+                type="radio"
+                name="contactMethod"
+                value="Email"
+                required
+              >
+              Email
+            </label>
+
+            <label class="radio-option">
+              <input
+                type="radio"
+                name="contactMethod"
+                value="Phone"
+              >
+              Phone
+            </label>
+
+            <label class="radio-option">
+              <input
+                type="radio"
+                name="contactMethod"
+                value="Text Message"
+              >
+              Text Message
+            </label>
+          </fieldset>
+
+          <label>
+            Additional Notes
+            <textarea
+              name="notes"
+              id="notes"
+              rows="6"
+              placeholder="Tell us about pets, special requests, or areas that need extra attention."
+            ></textarea>
+          </label>
+
+          <input type="hidden" name="submittedAt" id="submitted-at">
+
+          <button class="button primary-button" type="submit">
+            Request My Quote
+          </button>
+        </form>
+      </div>
+
+      <aside class="contact-information">
+        <h2>Contact Information</h2>
+
+        <div class="contact-detail">
+          <h3>Service Area</h3>
+          <p>Utah County and surrounding communities</p>
+        </div>
+
+        <div class="contact-detail">
+          <h3>Phone</h3>
+          <p>
+            <a href="tel:+13852059860">385-205-9860</a>
+          </p>
+        </div>
+
+        <div class="contact-detail">
+          <h3>Email</h3>
+          <p>
+            <a href="mailto:info@brighthomecleaning.com">
+              info@brighthomecleaning.com
+            </a>
+          </p>
+        </div>
+
+        <div class="contact-detail">
+          <h3>Business Hours</h3>
+          <p>Monday–Friday: 8:00 a.m.–6:00 p.m.</p>
+          <p>Saturday: 9:00 a.m.–2:00 p.m.</p>
+          <p>Sunday: Closed</p>
+        </div>
+
+        <div class="contact-note">
+          <h3>What happens next?</h3>
+          <p>
+            After submitting the form, your information will be displayed
+            on a confirmation page. We will then contact you using your
+            preferred method.
+          </p>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <p><strong>Bright Home Cleaning</strong></p>
+      <p>Professional residential cleaning services</p>
+    </div>
+
+    <div>
+      <p>
+        © <span id="current-year"></span> Bright Home Cleaning
+      </p>
+      <p id="last-modified"></p>
+    </div>
+
+    <div class="footer-links">
+      <a href="attributions.html">Attributions</a>
+      <a href="#" id="video-link">Video Demonstration</a>
+    </div>
+  </footer>
+</body>
+</html>

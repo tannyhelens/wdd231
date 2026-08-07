@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Explore residential, commercial, specialty, moving, and add-on cleaning services from Bright Home Cleaning."
+  >
+  <meta name="author" content="Tanny Santos">
+
+  <meta property="og:title" content="Bright Home Cleaning Services">
+  <meta
+    property="og:description"
+    content="Browse professional cleaning services for homes, apartments, offices, and rental properties."
+  >
+  <meta
+    property="og:image"
+    content="https://tannyhelens.github.io/wdd231/finalproject/images/deep-cleaning.webp"
+  >
+  <meta
+    property="og:url"
+    content="https://tannyhelens.github.io/wdd231/finalproject/services.html"
+  >
+  <meta property="og:type" content="website">
+
+  <title>Bright Home Cleaning | Services</title>
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/services.js"></script>
+</head>
+
+<body>
+  <header>
+    <a class="brand" href="index.html">
+      <span class="brand-icon" aria-hidden="true">✨</span>
+
+      <div>
+        <span class="brand-name">Bright Home Cleaning</span>
+        <span class="brand-tagline">A brighter home starts here</span>
+      </div>
+    </a>
+
+    <button
+      id="menu"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+
+    <nav id="navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-heading">
+      <p class="eyebrow">Cleaning options</p>
+      <h1>Professional Cleaning Services</h1>
+      <p>
+        Browse our residential, commercial, moving, specialty, and
+        add-on services to find the best option for your space.
+      </p>
+    </section>
+
+    <section class="service-tools" aria-label="Service filters">
+      <div class="search-control">
+        <label for="service-search">Search services</label>
+        <input
+          type="search"
+          id="service-search"
+          name="service-search"
+          placeholder="Search by service name"
+        >
+      </div>
+
+      <div class="filter-control">
+        <label for="category-filter">Filter by category</label>
+
+        <select id="category-filter" name="category-filter">
+          <option value="All">All Categories</option>
+          <option value="Recurring">Recurring</option>
+          <option value="Premium">Premium</option>
+          <option value="Moving">Moving</option>
+          <option value="Residential">Residential</option>
+          <option value="Commercial">Commercial</option>
+          <option value="Add-on">Add-on</option>
+          <option value="Specialty">Specialty</option>
+        </select>
+      </div>
+
+      <button id="show-favorites" class="button secondary-button" type="button">
+        Show Favorites
+      </button>
+    </section>
+
+    <section class="services-section">
+      <div class="section-heading">
+        <p class="eyebrow">Available services</p>
+        <h2>Choose the cleaning service that fits your needs</h2>
+      </div>
+
+      <p id="service-count" aria-live="polite"></p>
+
+      <div id="services-container" class="service-grid">
+        <p class="loading-message">Loading services...</p>
+      </div>
+    </section>
+
+    <dialog id="service-dialog">
+      <button
+        id="close-dialog"
+        class="dialog-close"
+        type="button"
+        aria-label="Close service details"
+      >
+        ×
+      </button>
+
+      <div id="dialog-content"></div>
+    </dialog>
+  </main>
+
+  <footer>
+    <div>
+      <p><strong>Bright Home Cleaning</strong></p>
+      <p>Professional residential cleaning services</p>
+    </div>
+
+    <div>
+      <p>
+        © <span id="current-year"></span> Bright Home Cleaning
+      </p>
+      <p id="last-modified"></p>
+    </div>
+
+    <div class="footer-links">
+      <a href="attributions.html">Attributions</a>
+      <a href="#" id="video-link">Video Demonstration</a>
+    </div>
+  </footer>
+</body>
+</html>
